@@ -1,5 +1,6 @@
 const changeIcon = document.getElementById("changeIcon");
 const btn_switch = document.getElementById("btn_switch");
+let moving = false;
 
 btn_switch.addEventListener("click", () => {
     if (btn_switch.checked) {
@@ -16,7 +17,7 @@ changeIcon.addEventListener("click", () => {
     changeImgs();
 });
 
-const changeImgs = () => {
+const changeImgs = async () => {
     const img_first = document.getElementById("img_first");
     const img_second = document.getElementById("img_second");
     const img_third = document.getElementById("img_third");
