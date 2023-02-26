@@ -4,7 +4,7 @@ const base_rect = document.getElementById("base_rect");
 const rect = document.getElementById("rect");
 
 const bar = 35;
-const date = new Date("2020-04-15");
+const date = new Date();
 
 const getDays = (year, month) => {
   return new Date(year, month, 0).getDate();
