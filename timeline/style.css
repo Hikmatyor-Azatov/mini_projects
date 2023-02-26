@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  /* background: cyan; */
+  width: 90%;
+  height: 300px;
+  position: relative;
+}
+#base_rect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  background-color: red;
+}
+#rect {
+  float: right;
+  background-color: green;
+  width: 200px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.day_number {
+  position: absolute;
+  width: 35px;
+  display: inline-block;
+  border-right: 1px solid black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day_number:last-child {
+  border-right: none;
+}
